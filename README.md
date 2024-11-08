@@ -1,8 +1,3 @@
-#Java End Assignment
--Student name= Ahmed Tarik Keser
--Number=708323
--Class=IT2A
-
 
 #Login Credentials for the Application:
 
