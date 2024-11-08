@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <HBox prefHeight="40.0" prefWidth="600.0">
+            <children>
+                <Label text="Manage Showings" translateX="10.0" />
+            </children>
+        </HBox>
+        <HBox prefHeight="45.0" prefWidth="600.0" style="-fx-background-color: black">
+            <children>
+                <Label text="Room1" textFill="WHITE" translateX="30.0" translateY="3.0" />
+            </children>
+        </HBox>
+        <HBox prefHeight="301.0" prefWidth="600.0">
+            <children>
+                <TableView fx:id="tableView" prefHeight="255.0" prefWidth="602.0">
+                    <columns>
+                        <TableColumn fx:id="startColumn" prefWidth="120.0" text="Start" />
+                        <TableColumn fx:id="endColumn" prefWidth="124.0" text="End" />
+                        <TableColumn fx:id="titleColumn" prefWidth="249.0" text="Title" />
+                        <TableColumn fx:id="seatsLeftColumn" prefWidth="106.0" text="Seats Left" />
+                    </columns>
+                </TableView>
+            </children>
+        </HBox>
+        <HBox prefHeight="104.0" prefWidth="600.0">
+            <children>
+                <Button fx:id="openButton" mnemonicParsing="false" style="-fx-background-color: blue" text="Add Showing" translateX="5.0" translateY="20.0" />
+                <Button fx:id="editButton" mnemonicParsing="false" style="-fx-background-color: grey" text="Edit Showing" translateX="30.0" translateY="20.0" />
+                <Button fx:id="deleteButton" mnemonicParsing="false" style="-fx-background-color: red" text="Delete Showing" translateX="60.0" translateY="20.0" />
+                <Button fx:id="exportShowingsButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="115.0" style="-fx-background-color: grey" text="Export Showings" translateX="150.0" translateY="30.0" />
+                <Label fx:id="lblWarning" prefHeight="28.0" prefWidth="170.0" />
+            </children>
+        </HBox>
+    </children>
+</VBox>

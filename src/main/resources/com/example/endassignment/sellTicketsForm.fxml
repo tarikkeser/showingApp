@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <HBox prefHeight="51.0" prefWidth="600.0">
+            <children>
+                <Label text="Sell Tickets" translateX="10.0" translateY="10.0" />
+            </children>
+        </HBox>
+        <HBox prefHeight="51.0" prefWidth="600.0" style="-fx-background-color: black">
+            <children>
+                <Label text="Room1" textFill="WHITE" translateX="30.0" translateY="3.0" />
+            <Label text="Search:" textFill="WHITE" translateX="270.0" translateY="10.0" />
+            <TextArea fx:id="filterShow" prefHeight="39.0" prefWidth="187.0" promptText="Enter (part of ) the title" translateX="300.0" />
+            </children>
+        </HBox>
+        <HBox prefHeight="301.0" prefWidth="600.0">
+            <children>
+                <TableView fx:id="tableView" prefHeight="255.0" prefWidth="602.0">
+                    <columns>
+                        <TableColumn fx:id="startColumn" prefWidth="120.0" text="Start" />
+                        <TableColumn fx:id="endColumn" prefWidth="124.0" text="End" />
+                        <TableColumn fx:id="titleColumn" prefWidth="249.0" text="Title" />
+                        <TableColumn fx:id="seatsLeftColumn" prefWidth="106.0" text="Seats Left" />
+                    </columns>
+                </TableView>
+            </children>
+        </HBox>
+        <HBox prefHeight="81.0" prefWidth="621.0">
+            <children>
+                <Button fx:id="selectSeat" mnemonicParsing="false" style="-fx-background-color: blue" text="Select seat(s)" textFill="WHITE" translateX="5.0" translateY="5.0" />
+                <Label fx:id="lblWarning" prefHeight="25.0" prefWidth="296.0" translateX="20.0" translateY="8.0" />
+            </children>
+        </HBox>
+    </children>
+</VBox>

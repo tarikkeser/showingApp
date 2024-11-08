@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="373.0"
+      prefWidth="472.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Label prefHeight="43.0" prefWidth="132.0" text="EDIT SHOWING" translateX="50.0"/>
+        <TextField fx:id="editShowingTitle" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="41.0"
+                   prefWidth="224.0" promptText="TITLE" translateX="50.0" translateY="10.0"/>
+        <Label fx:id="EditErrorMessage" prefHeight="60.0" prefWidth="195.0" textAlignment="CENTER" textFill="#c61a1a"
+               translateX="250.0" translateY="220.0">
+            <font>
+                <Font size="16.0"/>
+            </font>
+        </Label>
+        <DatePicker fx:id="editDateStartDay" promptText="DD:MM:YYYY" translateX="50.0"/>
+        <TextField fx:id="editDateStartHour" layoutX="10.0" layoutY="53.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                   prefHeight="34.0" prefWidth="98.0" promptText="HH:MM" translateX="300.0" translateY="-30.0"
+                   translateZ="-30.0"/>
+        <TextField fx:id="editDateEndHour" layoutX="10.0" layoutY="53.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                   prefHeight="34.0" prefWidth="98.0" promptText="HH:MM" translateX="300.0"/>
+        <DatePicker fx:id="editDateEndDay" layoutX="10.0" layoutY="94.0" promptText="DD:MM:YYYY" translateX="50.0"
+                    translateY="-30.0"/>
+        <Button fx:id="editButton" mnemonicParsing="false" text="Edit" textFill="#0d2cf2" translateX="50.0"
+                translateY="30.0"/>
+        <Button fx:id="editButtonCancel" mnemonicParsing="false" text="Cancel" translateX="150.0" translateY="5.0"/>
+    </children>
+</VBox>

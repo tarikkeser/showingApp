@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+      prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <HBox prefHeight="71.0" prefWidth="600.0">
+            <children>
+                <Label text="Sell Tickets" translateX="10.0" translateY="10.0"/>
+                <Label fx:id="selectedShowingName" text="Label" translateX="-50.0" translateY="40.0"/>
+            </children>
+        </HBox>
+        <HBox prefHeight="209.0" prefWidth="600.0">
+            <children>
+                <GridPane fx:id="seatsGrid" gridLinesVisible="true" prefHeight="233.0" prefWidth="343.0">
+
+                </GridPane>
+                <ListView fx:id="currentSelectedSeats" prefHeight="233.0" prefWidth="197.0" translateX="20.0"/>
+                <Label prefHeight="17.0" prefWidth="105.0" text="Selected Seats:" translateX="-160.0"
+                       translateY="-20.0"/>
+            </children>
+        </HBox>
+        <HBox prefHeight="77.0" prefWidth="600.0">
+            <children>
+                <Button fx:id="buttonSellTickets" mnemonicParsing="false" text="Sell" translateX="20.0"
+                        translateY="40.0"/>
+                <TextField fx:id="customerNameField" prefHeight="26.0" prefWidth="251.0" promptText="Customer Name"
+                           translateX="-35.0" translateY="5.0"/>
+                <Button fx:id="buttonCancel" mnemonicParsing="false" text="Cancel" translateX="-200.0"
+                        translateY="40.0"/>
+            </children>
+        </HBox>
+    </children>
+</VBox>
